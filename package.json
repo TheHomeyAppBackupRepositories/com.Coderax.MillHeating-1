@@ -1,0 +1,28 @@
+{
+  "name": "com.coderax.millheating",
+  "version": "2.0.0",
+  "description": "Integrate Mill WiFi heating devices with Homey",
+  "main": "app.js",
+  "dependencies": {
+    "@sentry/node": "7.60.0",
+    "axios": "^1.4.0",
+    "node-fetch": "3.3.2",
+    "@types/node": "^20.4.5"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "deploy": "rm -fr node_modules; npm install --production; athom app install",
+    "start": "rm -fr node_modules; npm install --production; athom app run",
+    "test": "mocha test/src/**"
+  },
+  "keywords": [
+    "thermostat",
+    "athom",
+    "homey",
+    "heating",
+    "mill"
+  ],
+  "author": "Jesper Grimstad",
+  "license": "ISC"
+}
