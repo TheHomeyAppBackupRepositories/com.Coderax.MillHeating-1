@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.Coderax.MillHeating",
-  "version": "2.3.6",
+  "version": "2.3.9",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
@@ -40,7 +40,7 @@
   "author": {
     "name": "Jesper Grimstad"
   },
-  "homeyCommunityTopicId": 3851,
+  "homeyCommunityTopicId": 87777,
   "contributing": {
     "donate": {
       "paypal": {
@@ -163,6 +163,33 @@
                 }
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "measure_tvoc_changed",
+        "title": {
+          "en": "TVOC level was changed",
+          "no": "TVOC-nivået ble endret",
+          "nl": "TVOC-niveau is gewijzigd"
+        },
+        "tokens": [
+          {
+            "name": "measure_tvoc",
+            "type": "number",
+            "title": {
+              "en": "TVOC",
+              "no": "TVOC",
+              "nl": "TVOC"
+            },
+            "example": 800
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=mill-sense"
           }
         ]
       }
@@ -380,11 +407,11 @@
     },
     {
       "name": {
-        "en": "Mill Sense",
-        "no": "Mill Sense",
-        "se": "Mill Sense",
-        "da": "Mill Sense",
-        "nl": "Mill Sense"
+        "en": "Mill Sense Air",
+        "no": "Mill Sense Air",
+        "se": "Mill Sense Air",
+        "da": "Mill Sense Air",
+        "nl": "Mill Sense Air"
       },
       "class": "sensor",
       "capabilities": [
